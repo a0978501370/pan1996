@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 標楷體;
+        }
+
+        header {
+            background-color: #25586f;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+
+            header .logo {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            header nav {
+                display: inline-block;
+                text-align: right;
+                width: 80%;
+                font-size: 0px;
+            }
+
+                header nav a {
+                    font-size: 20px;
+                    display: inline-block;
+                    padding: 0px 15px;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                    header nav a:hover {
+                        background-color: #1668c6;
+                        line-height: 40px;
+                    }
+
+
+
+        .banner img {
+            width: 100%;
+        }
+        .btn{
+            background-color:aquamarine;
+        }
+        .txt{
+            background-color:antiquewhite;
+        }
+        .txt:hover{
+            opacity:0.5;
+        }
+        .txt{
+            border-radius:30px;
+        }
+        .col{
+            border-color:#ffd800;
+        }
+        footer {
+            width: 100%;
+            background-color: #25586f;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+            footer div {
+                margin: 0 auto;
+                width: 30%;
+                display: inline-block;
+            }
+
+                footer div h1 {
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                    padding: 10px;
+                    font-size: 15pt;
+                }
+
+                footer div h3 {
+                    font-size: 10pt;
+                    color: white;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images\photo07.jpg"
+                 width="100" height="80"
+                 alt="回首頁" border="0" />
+        </a>
+        <nav>
+            <a href="hospital.html" target="_parent">附近醫院及交通</a>
+            <a href="feedback.html">意見回饋</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="images\photo06.jpg"
+             alt="背景圖" width="200" height="500" />
+    </div>
+    <form>
+        <fieldset class="col">
+
+            <legend align="left" style="background-color:#0094ff">個人資料</legend>
+            <ol>
+                <li>姓名:<input type="text" name="txtName" class="txt" /></li>
+                <li>信箱:<input type="email" name="txtMail" class="txt" /></li>
+                <li>身分證字號:<input type="number" name="txtNumber" class="txt" /></li>
+                <li>生日:<input type="date" name="txtDate" class="txt" /></li>
+            </ol>
+        </fieldset>
+        <fieldset class="col">
+            <legend align="left" style="background-color:#0094ff">意見調查</legend>
+            <ol>
+                <li>
+                    你對這個APP的滿意度?
+                    <input type="radio" name="chk" value="滿意" />滿意
+                    <input type="radio" name="chk" value="尚可" />尚可
+                    <input type="radio" name="chk" value="有待加強" />有待加強
+                </li>
+                <li>
+                    哪些是你選擇這款APP的原因?
+                    <input type="checkbox" name="aa" value="方便快速" />方便快速
+                    <input type="checkbox" name="aa" value="資訊清晰" />資訊清晰
+                    <input type="checkbox" name="aa" value="單純想用" />單純想用
+                </li>
+                <li>
+                    請提供您的建議以供我們改進<br />
+                    <textarea rows="5" name="txtName">請填寫意見</textarea>
+                </li>
+            </ol>
+        </fieldset>
+        <p>
+            <input type="submit" value="送出" class="btn" />
+            <input type="reset" value="重設" class="btn" />
+        </p>
+    </form>
+    <footer>
+        <div>
+            <h1>關於我們</h1>
+            <h3>
+                地址:台中市南屯區嶺東路一號<br />
+                信箱:a0978501370@gmail.com
+            </h3>
+        </div>
+        <div>
+            <h1>聯絡我們</h1>
+            <h3>
+                總機:04-2322-1655<br />
+                傳真:04-2310-9505
+            </h3>
+        </div>
+    </footer>
+</body>
+</html>
